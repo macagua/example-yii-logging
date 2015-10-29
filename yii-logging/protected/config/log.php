@@ -23,6 +23,13 @@ return array(
             'filter'=>'CLogFilter',
             'logFile'=>'error.log',
         ),
+        array(
+            'class'=>'FileLogRouter',
+            'enabled'=>YII_DEBUG,
+            // you can include more levels separated by commas
+            'levels'=>'error, warning',
+            'logFile'=>'mycustom.log',
+        ),
         // sending a email with log
         /*array(
             'class'=>'CEmailLogRoute',
